@@ -1,0 +1,13 @@
+.btn {
+  display: inline-block;
+  vertical-align: baseline;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  &--black {
+    &:hover {
+    }
+    &:active {
+    }
+  }
+}

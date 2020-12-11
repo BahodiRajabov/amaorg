@@ -1,0 +1,13 @@
+.logo {
+  display: inline-block;
+  vertical-align: baseline;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
+.logo__img {
+  display: block;
+}
