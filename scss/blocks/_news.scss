@@ -36,8 +36,12 @@
   text-decoration: none;
   text-align: center;
   transition: background-color 0.3s ease;
+  background-color: #004b93;
   &:hover {
-    background-color: rgba(0, 75, 147, 0.1);
+    background-color: #0057a8;
+  }
+  & .news__item-desc {
+    color: #ffffff;
   }
 }
 .news__item-info {

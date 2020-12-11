@@ -870,7 +870,6 @@ img {
 .partners__item {
   max-width: 280px;
   width: 100%;
-  background-color: whitesmoke;
   border-radius: 5px;
   margin: 15px;
 }
@@ -878,6 +877,13 @@ img {
 .partners__link {
   display: block;
   text-align: center;
+  background-color: whitesmoke;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.partners__link:hover {
+  background-color: #e2e2e2;
 }
 
 .partners__item-img {
@@ -939,10 +945,15 @@ img {
   text-align: center;
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
+  background-color: #004b93;
 }
 
 .news__link:hover {
-  background-color: rgba(0, 75, 147, 0.1);
+  background-color: #0057a8;
+}
+
+.news__link .news__item-desc {
+  color: #ffffff;
 }
 
 .news__item-info {
@@ -956,5 +967,95 @@ img {
 
 .news__item-img {
   display: block;
+}
+
+.footer {
+  background-color: #292b33;
+}
+
+.footer__top {
+  padding: 40px 0;
+  border-bottom: 1px solid #cccccc;
+}
+
+.footer__top-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__logo {
+  margin-right: 10px;
+}
+
+.footer__address {
+  max-width: 260px;
+  width: 100%;
+  color: #cccccc;
+  font-style: normal;
+  margin-right: 10px;
+}
+
+.footer__tel-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.footer__tel-item {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.footer__tel-link {
+  text-decoration: none;
+  color: #cccccc;
+  display: block;
+}
+
+.footer__tel-link:hover {
+  color: #ffffff;
+}
+
+.footer__socials-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+}
+
+.footer__socials-item {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.footer__socials-link {
+  display: block;
+}
+
+.footer__bottom {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.footer__bottom-copy {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #cccccc;
 }
 /*# sourceMappingURL=styles.css.map */
