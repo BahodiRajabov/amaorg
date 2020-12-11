@@ -1,0 +1,21 @@
+.language {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.language__img {
+  display: block;
+}
+.language__btn {
+  display: block;
+  height: 100%;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+  &--active {
+    background-color: #ddd;
+  }
+}

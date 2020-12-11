@@ -5,12 +5,81 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
   <!-- header section  -->
-  <header class="header"></header>
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <ul class="header__top-list">
+          <li class="header__top-item header__top-item--active ">
+            <a class="header__top-link" href="#">Home</a>
+          </li>
+          <li class="header__top-item">
+            <a class="header__top-link" href="#">Find a doctor</a>
+          </li>
+          <li class="header__top-item">
+            <a class="header__top-link" href="#">Apps</a>
+          </li>
+          <li class="header__top-item">
+            <a class="header__top-link" href="#">Testimonials</a>
+          </li>
+          <li class="header__top-item">
+            <a class="header__top-link" href="#">About us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container header__bottom-container">
+        <nav class="nav">
+          <a class="header__logo logo" href="index.html">
+            <img class="logo__img" src="./img/logo.png" alt="ama logo" width="150" height="50">
+          </a>
+          <ul class="nav__list">
+            <li class="nav__item nav__item--active ">
+              <a class="nav__link" href="#">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">aftermarket</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Apps</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Testimonials</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">About us</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__bottom-right">
+          <form action="#" method="get">
+            <button class="header__bottom-right-search" type="button" aria-label="Search">
+              <img class="header__bottom-right-search-img" src="./img/search.svg" alt="search icon" width="20"
+                height="20">
+            </button>
+          </form>
+          <div class="language">
+            <!-- <button class="language-btn" type="button">
+              <img src="./img/uz-flag.svg" alt="uz flag" width="20" height="20">
+            </button> -->
+            <button class="language__btn language__btn--active" type="button">
+              <img class="language__img" src="./img/ru-flag.svg" alt="ru flag" width="20" height="20">
+            </button>
+            <button class="language__btn" type="button">
+              <img class="language__img" src="./img/en-flag.svg" alt="en flag" width="20" height="20">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
   <!-- main contant -->
   <main class="main">

@@ -1,0 +1,29 @@
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav__list {
+  @include reset-list;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.nav__item {
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.nav__item--active {
+}
+.nav__link {
+  display: block;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  padding: 5px 10px;
+  &:hover {
+    opacity: 0.8;
+  }
+}
