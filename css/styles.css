@@ -1169,6 +1169,60 @@ img {
   width: 100%;
 }
 
+.login {
+  max-width: 500px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login__title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.login__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.login__form-input {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  margin-bottom: 15px;
+}
+
+.login__form-button {
+  padding: 10px;
+  background-color: #d6d6d6;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.login__form-desc {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.login__form-link-auth {
+  display: inline-block;
+  vertical-align: baseline;
+  text-decoration: none;
+  color: #0064c9;
+}
+
 .footer {
   background-color: #292b33;
 }
