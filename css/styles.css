@@ -357,6 +357,7 @@ html {
 body {
   padding: 0;
   margin: 0;
+  margin-top: 114px;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -405,7 +406,7 @@ img {
 }
 
 .header__logo {
-  margin-right: 200px;
+  margin-right: 80px;
 }
 
 .header__top {
@@ -466,6 +467,23 @@ img {
           box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
 }
 
+.header__bottom-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #ddd;
+  background-color: #ffffff;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.header__bottom-form-input {
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+
 .header__bottom-right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -486,12 +504,9 @@ img {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  border-left: 1px solid #ddd;
   width: 34px;
-  height: 34px;
-  margin-right: 10px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  outline: none;
 }
 
 .logo {
@@ -967,6 +982,191 @@ img {
 
 .news__item-img {
   display: block;
+}
+
+.features {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.features__desc {
+  color: #004b93;
+  text-align: center;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  max-width: 1100px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.features__item {
+  max-width: 380px;
+  width: 100%;
+  text-align: center;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 20px 10px;
+}
+
+.features__item-title {
+  margin-top: 0;
+  color: #004b93;
+}
+
+.features__item-desc {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #004b93;
+}
+
+.features__item-img {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-bottom: 20px;
+}
+
+.market-intro {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url("../../img/aftermarket.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.market-intro__info {
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.market-intro__header {
+  text-align: center;
+  margin-top: 0;
+  font-size: 42px;
+  line-height: 42px;
+  font-weight: 300;
+  color: #004b93;
+}
+
+.market-intro__title-mark {
+  font-weight: 700;
+}
+
+.market-intro__desc {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #004b93;
+}
+
+.market-intro__link {
+  display: inline-block;
+  vertical-align: baseline;
+  text-decoration: none;
+  font-size: 14px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #004b93;
+  color: #ffffff;
+}
+
+.market-cta {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url("../img/cta.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.market-cta__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.market-cta__info {
+  max-width: 800px;
+  width: 100%;
+  margin-right: 80px;
+}
+
+.market-cta__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 44px;
+  line-height: 50px;
+}
+
+.market-cta__desc {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.market-cta__link {
+  display: inline-block;
+  vertical-align: baseline;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #004b93;
+  font-size: 14px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+}
+
+.market-cta__link:hover {
+  opacity: 0.9;
+}
+
+.market-cta__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #ffffff;
+  width: 100%;
 }
 
 .footer {

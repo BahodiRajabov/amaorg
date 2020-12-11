@@ -1,0 +1,49 @@
+.market-intro {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url("../../img/aftermarket.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.market-intro__info {
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.market-intro__header {
+  text-align: center;
+  margin-top: 0;
+  font-size: 42px;
+  line-height: 42px;
+  font-weight: 300;
+  color: #004b93;
+}
+.market-intro__title-mark {
+  font-weight: 700;
+}
+.market-intro__desc {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #004b93;
+}
+.market-intro__link {
+  display: inline-block;
+  vertical-align: baseline;
+  text-decoration: none;
+  font-size: 14px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #004b93;
+  color: #ffffff;
+}
+.partners__title {
+}
