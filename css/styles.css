@@ -826,4 +826,135 @@ img {
   color: #004b93;
   font-style: italic;
 }
+
+.partners {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.partners__title {
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  font-size: 42px;
+  line-height: 42px;
+  font-weight: 300;
+  color: #004b93;
+}
+
+.partners__title-mark {
+  font-weight: 700;
+}
+
+.partners__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.partners__item {
+  max-width: 280px;
+  width: 100%;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  margin: 15px;
+}
+
+.partners__link {
+  display: block;
+  text-align: center;
+}
+
+.partners__item-img {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.news {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.news__title {
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  font-size: 42px;
+  line-height: 42px;
+  font-weight: 300;
+  color: #004b93;
+}
+
+.news__title-mark {
+  font-weight: 700;
+}
+
+.news__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.news__item {
+  max-width: 380px;
+  width: 100%;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  margin: 15px;
+}
+
+.news__link {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.news__link:hover {
+  background-color: rgba(0, 75, 147, 0.1);
+}
+
+.news__item-info {
+  padding: 10px;
+}
+
+.news__item-desc {
+  color: #222;
+  font-size: 18px;
+}
+
+.news__item-img {
+  display: block;
+}
 /*# sourceMappingURL=styles.css.map */
