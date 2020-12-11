@@ -773,4 +773,57 @@ img {
   max-width: 400px;
   width: 100%;
 }
+
+.founder {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.founder__inner {
+  overflow: hidden;
+  max-width: 900px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 4px 24px rgba(0, 97, 187, 0.1);
+          box-shadow: 0px 4px 24px rgba(0, 97, 187, 0.1);
+}
+
+.founder__info {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 20px;
+}
+
+.founder__words {
+  color: #004b93;
+  margin: 0;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.founder__words-mark {
+  font-weight: 700;
+}
+
+.founder__name {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #004b93;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.founder__job {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #004b93;
+  font-style: italic;
+}
 /*# sourceMappingURL=styles.css.map */
