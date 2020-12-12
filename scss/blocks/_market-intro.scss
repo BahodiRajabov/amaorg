@@ -47,3 +47,8 @@
 }
 .partners__title {
 }
+@include responsive(630) {
+  .market-intro__header {
+    font-size: 34px;
+  }
+}

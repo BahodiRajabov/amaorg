@@ -39,7 +39,6 @@
   @include reset-list;
   display: flex;
   align-items: center;
-  margin-right: 10px;
 }
 .footer__socials-item {
   margin-right: 5px;
@@ -57,4 +56,39 @@
   margin-top: 0;
   margin-bottom: 0;
   color: #cccccc;
+}
+@include responsive(650) {
+  .footer__top-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__address {
+    max-width: 500px;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+  .footer__logo {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .footer__tel-list {
+    display: flex;
+    flex-direction: row;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .footer__tel-item {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+@include responsive(550) {
+  .footer__top-container {
+  }
+  .footer__tel-list {
+    flex-direction: column;
+  }
 }

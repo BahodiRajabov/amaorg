@@ -52,5 +52,21 @@
   font-size: 18px;
 }
 .news__item-img {
-  display: block;
+  object-fit: cover;
+  display: inline-block;
+  vertical-align: baseline;
 }
+@include responsive(900) {
+  .news__item-img {
+    width: 100%;
+    height: 320px;
+  }
+  .news__item {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 560px;
+  }
+  .news__item-desc {
+    font-size: 20px;
+  }
+} ;

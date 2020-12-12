@@ -15,6 +15,7 @@
   width: 100%;
   border-right: 1px solid #ffffff;
   margin-right: 20px;
+  padding-right: 10px;
 }
 .cta__title {
   margin-top: 0;
@@ -56,4 +57,20 @@
   font-weight: 500;
   max-width: 400px;
   width: 100%;
+}
+@include responsive(750) {
+  .cta__info {
+    margin-right: 0;
+    max-width: 100%;
+    border: none;
+  }
+  .cta__title {
+    font-size: 32px;
+  }
+  .cta__desc {
+    font-size: 21px;
+  }
+  .cta__text {
+    display: none;
+  }
 }

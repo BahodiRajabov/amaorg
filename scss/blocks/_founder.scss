@@ -41,3 +41,22 @@
   color: #004b93;
   font-style: italic;
 }
+.founder__img {
+  object-fit: cover;
+  object-position: center top;
+  display: inline-block;
+  vertical-align: baseline;
+}
+@include responsive(630) {
+  .founder__img {
+    width: 100%;
+    height: 320px;
+  }
+  .founder__inner {
+    max-width: 400px;
+    flex-direction: column;
+  }
+  .founder__info {
+    padding: 20px;
+  }
+}

@@ -55,3 +55,16 @@
   color: #ffffff;
   width: 100%;
 }
+@include responsive(650) {
+  .market-cta__title {
+    font-size: 32px;
+  }
+  .market-cta__info {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .market-cta__container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+} ;

@@ -33,6 +33,9 @@
 .products__item-img {
   transition: transform 0.3s ease;
   display: block;
+  width: 100%;
+  height: 365px;
+  object-fit: cover;
 }
 .products__item-info {
   padding: 15px 20px;
@@ -52,4 +55,14 @@
   -webkit-line-clamp: 2;
   overflow: hidden;
   color: #ffffff;
+}
+@include responsive(630) {
+  .products__list {
+    margin: 0;
+  }
+  .products__item {
+    max-width: 340px;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
