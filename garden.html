@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <!-- header section  -->
+    <header class="header">
+        <!-- header top  -->
+        <div class="header__top">
+            <div class="container">
+                <ul class="header__top-list">
+                    <li class="header__top-item header__top-item--active ">
+                        <a class="header__top-link" href="#">Home</a>
+                    </li>
+                    <li class="header__top-item">
+                        <a class="header__top-link" href="#">Find a doctor</a>
+                    </li>
+                    <li class="header__top-item">
+                        <a class="header__top-link" href="#">Apps</a>
+                    </li>
+                    <li class="header__top-item">
+                        <a class="header__top-link" href="#">Testimonials</a>
+                    </li>
+                    <li class="header__top-item">
+                        <a class="header__top-link" href="/login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- header bottom  -->
+        <div class="header__bottom">
+            <div class="container header__bottom-container">
+                <a class="header__logo logo" href="/">
+                    <img class="logo__img" src="./img/logo.png" alt="ama logo" width="150" height="50">
+                </a>
+                <button class="header__toggler" type="button" aria-label="toggle menu button">
+                </button>
+                <div class="header__bottom-main">
+                    <nav class="nav header__nav">
+                        <ul class="nav__list">
+                            <li class="nav__item nav__item--active ">
+                                <a class="nav__link" href="#">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">Apps</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">Testimonials</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="./aftermarket.html">aftermarket</a>
+                                <ul class="nav__sub-list">
+                                    <li class="nav__sub-item">
+                                        <a href="./shops" class="nav__sub-link">AGRi</a>
+                                    </li>
+                                    <li class="nav__sub-item">
+                                        <a href="#" class="nav__sub-link">Garden</a>
+                                    </li>
+                                    <li class="nav__sub-item">
+                                        <a href="#" class="nav__sub-link">Grapicks</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">About us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__bottom-right">
+                        <form class="header__bottom-form" action="#" method="get">
+                            <input class="header__bottom-form-input" type="search" name="search" placeholder="search"
+                                aria-label="search" required>
+                            <button class="header__bottom-right-search" type="button" aria-label="Search">
+                                <img class="header__bottom-right-search-img" src="./img/search.svg" alt="search icon"
+                                    width="20" height="20">
+                            </button>
+                        </form>
+                        <div class="language">
+                            <button class="language__btn language__btn--active" type="button">
+                                <img class="language__img" src="./img/ru-flag.svg" alt="ru flag" width="20" height="20">
+                            </button>
+                            <button class="language__btn" type="button">
+                                <img class="language__img" src="./img/en-flag.svg" alt="en flag" width="20" height="20">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Breadcrumb Menu -->
+        <section class="breadcrumb">
+            <div class="container breadcrumb__container">
+                <ul class="breadcrumb__list">
+                    <li class="breadcrumb__item">
+                        <a class="breadcrumb__link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="breadcrumb__item">
+                        <a class="breadcrumb__link" href="#">Catalogo</a>
+                    </li>
+
+                    <li class="breadcrumb__item">
+                        <a class="breadcrumb__link" href="garden.html">Garden</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="shops">
+            <div class="container shops__container">
+                <div class="shops__bar">
+                    <div class="shops__bar-top">
+                        <h2 class="shops__bar-heading">SEARCH PRODUCTS</h2>
+
+                        <div class="shops__bar-search-wrapper">
+                            <form class="shops__search-form" action="/" method="GET">
+                                <input class="shops__bar-search" type="search" name="search" placeholder="search term"
+                                    aria-label="search product">
+                                <button class="shops__bar-button" type="button">
+                                    <img class="shops__bar-button-img" src="img/search-shops.svg" alt="search"
+                                        width="22" height="16">
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="shops__bar-bottom">
+                        <h3 class="shops__bar-title">Garden</h3>
+
+                        <ul class="shops__bar-list">
+                            <li class="shops__bar-item">
+                                <a class="shops__bar-link" href="">Battery & electric tools</a>
+                            </li>
+
+                            <li class="shops__bar-item">
+                                <a class="shops__bar-link" href="">Brushcutter</a>
+                            </li>
+
+                            <li class="shops__bar-item">
+                                <a class="shops__bar-link" href="">Brushcutter spare parts</a>
+                            </li>
+
+                            <li class="shops__bar-item">
+                                <a class="shops__bar-link" href="">Chainsaw</a>
+                            </li>
+
+                            <li class="shops__bar-item">
+                                <a class="shops__bar-link" href="">Chainsaw spare parts</a>
+                            </li>
+
+                            <li class="shops__bar-item">
+                                <a class="shops__bar-link" href="">Garden machinery</a>
+                            </li>
+
+                            <li class="shops__bar-item">
+                                <a class="shops__bar-link" href="">Gardening equipment</a>
+                            </li>
+
+                            <li class="shops__bar-item">
+                                <a class="shops__bar-link" href="">Hedgetrimmers</a>
+                            </li>
+
+                            <li class="shops__bar-item">
+                                <a class="shops__bar-link" href="">Lawn tractors & mower spare parts</a>
+                            </li>
+
+                            <li class="shops__bar-item">
+                                <a class="shops__bar-link" href="">Lawnmower</a>
+                            </li>
+
+                            <li class="shops__bar-item">
+                                <a class="shops__bar-link" href="">Leaves vacuum, scarifier, shredder</a>
+                            </li>
+
+                            <li class="shops__bar-item">
+                                <a class="shops__bar-link" href="">Motor hose & motor mowers</a>
+                            </li>
+
+                            <li class="shops__bar-item">
+                                <a class="shops__bar-link" href="">Multifunction system</a>
+                            </li>
+
+                            <li class="shops__bar-item">
+                                <a class="shops__bar-link" href="">Oils and fuel transfer</a>
+                            </li>
+
+                            <li class="shops__bar-item">
+                                <a class="shops__bar-link" href="">Robot lawn mower kress</a>
+                            </li>
+
+                            <li class="shops__bar-item">
+                                <a class="shops__bar-link" href="">Safety products</a>
+                            </li>
+
+                            <li class="shops__bar-item">
+                                <a class="shops__bar-link" href="">Snowthrowers</a>
+                            </li>
+
+                            <li class="shops__bar-item">
+                                <a class="shops__bar-link" href="">Tractor</a>
+                            </li>
+
+                            <li class="shops__bar-item">
+                                <a class="shops__bar-link" href="">Transporters</a>
+                            </li>
+
+                            <li class="shops__bar-item">
+                                <a class="shops__bar-link" href="">Vacuum & knapsack mist blowers</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- shops__bar -->
+
+                <div class="shops__products">
+                    <div class="shops__products-top">
+                        <form class="shops__search-form shops__products-form" action="/" method="GET">
+                            <input class="shops__bar-search shops__products-input" type="search" name="search"
+                                placeholder="Search product" aria-label="search product">
+                            <button class="shops__bar-button" type="button">
+                                <img class="shops__bar-button-img" src="img/search-shops.svg" alt="search" width="22"
+                                    height="16">
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="shops__type">
+                        <form class="shops__type-form" action="/" method="GET">
+                            <button class="shops__type-button">
+                                <img class="shops__type-button-img" src="img/search-shops-blue.svg" alt="search"
+                                    width="22" height="16">
+                            </button>
+
+                            <input class="shops__type-input" type="search" name="filter" placeholder="Filter by name"
+                                aria-label="Filter by name">
+                        </form>
+
+                        <select class="shops__type-sort" id="sort">
+                            <option class="shops__type-option" value="sort" selected>Sort by</option>
+                            <option class="shops__type-option" value="default">Default Sort</option>
+                            <option class="shops__type-option" value="namestart">Name A-Z</option>
+                            <option class="shops__type-option" value="nameend">Name Z-A</option>
+                        </select>
+
+                        <select class="shops__type-sort" id="sort">
+                            <option class="shops__type-option" value="item" selected>Item per page</option>
+                            <option class="shops__type-option" value="twelve-items">12 items</option>
+                            <option class="shops__type-option" value="eighteen-items">18 items</option>
+                            <option class="shops__type-option" value="fourty-items">40 items</option>
+                            <option class="shops__type-option" value="all">Show all</option>
+                        </select>
+
+                        <button class="shops__type-reset-button" type="button">Reset
+                            <img src="img/refresh.svg" alt="refresh" width="12" height="12">
+                        </button>
+                    </div>
+
+                    <div class="shops__pagination">
+                        <ol class="shops__pagination-list">
+                            <li class="shops__pagination-item shops__pagination-item--active">
+                                <button class="shops__pagination-button">
+                                    1
+                                </button>
+                            </li>
+
+                            <li class="shops__pagination-item">
+                                <button class="shops__pagination-button">
+                                    2
+                                </button>
+                            </li>
+
+                            <li class="shops__pagination-item">
+                                <button class="shops__pagination-button">
+                                    <img class="shops__pagination-button-next" src="img/chevron-right-blue.svg"
+                                        alt="Next Button" width="10" height="15">
+                                </button>
+                            </li>
+
+                            <li class="shops__pagination-item">
+                                <button class="shops__pagination-button">
+                                    <img class="shops__pagination-button-next" src="img/chevrons-right.svg"
+                                        alt="Next Button" width="10" height="15">
+                                </button>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <ul class="shops__list">
+                        <li class="shops__item">
+                            <a class="shops__link" href="">
+                                <img class="shops__img" src="img/robot-shops.jpg" alt="robot" width="137" height="137">
+                            </a>
+
+                            <div class="shops__body">
+                                <a class="shops__link" href="">Robot lawn mower Kress</a>
+                            </div>
+
+                            <div class="shops__footer">
+                                <img src="img/outdent-solid.svg" alt="Outdent" width="15" height="15">
+                                <p class="shops__footer-text">Garden</p>
+                            </div>
+                        </li>
+
+                        <li class="shops__item">
+                            <a class="shops__link" href="">
+                                <img class="shops__img" src="img/robot-shops.jpg" alt="robot" width="137" height="137">
+                            </a>
+
+                            <div class="shops__body">
+                                <a class="shops__link" href="">Robot lawn mower Kress</a>
+                            </div>
+
+                            <div class="shops__footer">
+                                <img src="img/outdent-solid.svg" alt="Outdent" width="15" height="15">
+                                <p class="shops__footer-text">Garden</p>
+                            </div>
+                        </li>
+
+                        <li class="shops__item">
+                            <a class="shops__link" href="">
+                                <img class="shops__img" src="img/robot-shops.jpg" alt="robot" width="137" height="137">
+                            </a>
+
+                            <div class="shops__body">
+                                <a class="shops__link" href="">Robot lawn mower Kress</a>
+                            </div>
+
+                            <div class="shops__footer">
+                                <img src="img/outdent-solid.svg" alt="Outdent" width="15" height="15">
+                                <p class="shops__footer-text">Garden</p>
+                            </div>
+                        </li>
+
+                        <li class="shops__item">
+                            <a class="shops__link" href="">
+                                <img class="shops__img" src="img/robot-shops.jpg" alt="robot" width="137" height="137">
+                            </a>
+
+                            <div class="shops__body">
+                                <a class="shops__link" href="">Robot lawn mower Kress</a>
+                            </div>
+
+                            <div class="shops__footer">
+                                <img src="img/outdent-solid.svg" alt="Outdent" width="15" height="15">
+                                <p class="shops__footer-text">Garden</p>
+                            </div>
+                        </li>
+
+                        <li class="shops__item">
+                            <a class="shops__link" href="">
+                                <img class="shops__img" src="img/robot-shops.jpg" alt="robot" width="137" height="137">
+                            </a>
+
+                            <div class="shops__body">
+                                <a class="shops__link" href="">Robot lawn mower Kress</a>
+                            </div>
+
+                            <div class="shops__footer">
+                                <img src="img/outdent-solid.svg" alt="Outdent" width="15" height="15">
+                                <p class="shops__footer-text">Garden</p>
+                            </div>
+                        </li>
+
+                        <li class="shops__item">
+                            <a class="shops__link" href="">
+                                <img class="shops__img" src="img/robot-shops.jpg" alt="robot" width="137" height="137">
+                            </a>
+
+                            <div class="shops__body">
+                                <a class="shops__link" href="">Robot lawn mower Kress</a>
+                            </div>
+
+                            <div class="shops__footer">
+                                <img src="img/outdent-solid.svg" alt="Outdent" width="15" height="15">
+                                <p class="shops__footer-text">Garden</p>
+                            </div>
+                        </li>
+
+                        <li class="shops__item">
+                            <a class="shops__link" href="">
+                                <img class="shops__img" src="img/robot-shops.jpg" alt="robot" width="137" height="137">
+                            </a>
+
+                            <div class="shops__body">
+                                <a class="shops__link" href="">Robot lawn mower Kress</a>
+                            </div>
+
+                            <div class="shops__footer">
+                                <img src="img/outdent-solid.svg" alt="Outdent" width="15" height="15">
+                                <p class="shops__footer-text">Garden</p>
+                            </div>
+                        </li>
+
+                        <li class="shops__item">
+                            <a class="shops__link" href="">
+                                <img class="shops__img" src="img/robot-shops.jpg" alt="robot" width="137" height="137">
+                            </a>
+
+                            <div class="shops__body">
+                                <a class="shops__link" href="">Robot lawn mower Kress</a>
+                            </div>
+
+                            <div class="shops__footer">
+                                <img src="img/outdent-solid.svg" alt="Outdent" width="15" height="15">
+                                <p class="shops__footer-text">Garden</p>
+                            </div>
+                        </li>
+
+                        <li class="shops__item">
+                            <a class="shops__link" href="">
+                                <img class="shops__img" src="img/robot-shops.jpg" alt="robot" width="137" height="137">
+                            </a>
+
+                            <div class="shops__body">
+                                <a class="shops__link" href="">Robot lawn mower Kress</a>
+                            </div>
+
+                            <div class="shops__footer">
+                                <img src="img/outdent-solid.svg" alt="Outdent" width="15" height="15">
+                                <p class="shops__footer-text">Garden</p>
+                            </div>
+                        </li>
+
+                        <li class="shops__item">
+                            <a class="shops__link" href="">
+                                <img class="shops__img" src="img/robot-shops.jpg" alt="robot" width="137" height="137">
+                            </a>
+
+                            <div class="shops__body">
+                                <a class="shops__link" href="">Robot lawn mower Kress</a>
+                            </div>
+
+                            <div class="shops__footer">
+                                <img src="img/outdent-solid.svg" alt="Outdent" width="15" height="15">
+                                <p class="shops__footer-text">Garden</p>
+                            </div>
+                        </li>
+
+                        <li class="shops__item">
+                            <a class="shops__link" href="">
+                                <img class="shops__img" src="img/robot-shops.jpg" alt="robot" width="137" height="137">
+                            </a>
+
+                            <div class="shops__body">
+                                <a class="shops__link" href="">Robot lawn mower Kress</a>
+                            </div>
+
+                            <div class="shops__footer">
+                                <img src="img/outdent-solid.svg" alt="Outdent" width="15" height="15">
+                                <p class="shops__footer-text">Garden</p>
+                            </div>
+                        </li>
+
+                        <li class="shops__item">
+                            <a class="shops__link" href="">
+                                <img class="shops__img" src="img/robot-shops.jpg" alt="robot" width="137" height="137">
+                            </a>
+
+                            <div class="shops__body">
+                                <a class="shops__link" href="">Robot lawn mower Kress</a>
+                            </div>
+
+                            <div class="shops__footer">
+                                <img src="img/outdent-solid.svg" alt="Outdent" width="15" height="15">
+                                <p class="shops__footer-text">Garden</p>
+                            </div>
+                        </li>
+
+                        <li class="shops__item">
+                            <a class="shops__link" href="">
+                                <img class="shops__img" src="img/robot-shops.jpg" alt="robot" width="137" height="137">
+                            </a>
+
+                            <div class="shops__body">
+                                <a class="shops__link" href="">Robot lawn mower Kress</a>
+                            </div>
+
+                            <div class="shops__footer">
+                                <img src="img/outdent-solid.svg" alt="Outdent" width="15" height="15">
+                                <p class="shops__footer-text">Garden</p>
+                            </div>
+                        </li>
+
+                        <li class="shops__item">
+                            <a class="shops__link" href="">
+                                <img class="shops__img" src="img/robot-shops.jpg" alt="robot" width="137" height="137">
+                            </a>
+
+                            <div class="shops__body">
+                                <a class="shops__link" href="">Robot lawn mower Kress</a>
+                            </div>
+
+                            <div class="shops__footer">
+                                <img src="img/outdent-solid.svg" alt="Outdent" width="15" height="15">
+                                <p class="shops__footer-text">Garden</p>
+                            </div>
+                        </li>
+
+                        <li class="shops__item">
+                            <a class="shops__link" href="">
+                                <img class="shops__img" src="img/robot-shops.jpg" alt="robot" width="137" height="137">
+                            </a>
+
+                            <div class="shops__body">
+                                <a class="shops__link" href="">Robot lawn mower Kress</a>
+                            </div>
+
+                            <div class="shops__footer">
+                                <img src="img/outdent-solid.svg" alt="Outdent" width="15" height="15">
+                                <p class="shops__footer-text">Garden</p>
+                            </div>
+                        </li>
+
+                        <li class="shops__item">
+                            <a class="shops__link" href="">
+                                <img class="shops__img" src="img/robot-shops.jpg" alt="robot" width="137" height="137">
+                            </a>
+
+                            <div class="shops__body">
+                                <a class="shops__link" href="">Robot lawn mower Kress</a>
+                            </div>
+
+                            <div class="shops__footer">
+                                <img src="img/outdent-solid.svg" alt="Outdent" width="15" height="15">
+                                <p class="shops__footer-text">Garden</p>
+                            </div>
+                        </li>
+
+                        <li class="shops__item">
+                            <a class="shops__link" href="">
+                                <img class="shops__img" src="img/robot-shops.jpg" alt="robot" width="137" height="137">
+                            </a>
+
+                            <div class="shops__body">
+                                <a class="shops__link" href="">Robot lawn mower Kress</a>
+                            </div>
+
+                            <div class="shops__footer">
+                                <img src="img/outdent-solid.svg" alt="Outdent" width="15" height="15">
+                                <p class="shops__footer-text">Garden</p>
+                            </div>
+                        </li>
+
+                        <li class="shops__item">
+                            <a class="shops__link" href="">
+                                <img class="shops__img" src="img/robot-shops.jpg" alt="robot" width="137" height="137">
+                            </a>
+
+                            <div class="shops__body">
+                                <a class="shops__link" href="">Robot lawn mower Kress</a>
+                            </div>
+
+                            <div class="shops__footer">
+                                <img src="img/outdent-solid.svg" alt="Outdent" width="15" height="15">
+                                <p class="shops__footer-text">Garden</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="shops__pagination shops__pagination-footer">
+                        <ol class="shops__pagination-list">
+                            <li class="shops__pagination-item">
+                                <button class="shops__pagination-number" disabled>
+                                    Page 1 di 2
+                                </button>
+                            </li>
+                            <li class="shops__pagination-item shops__pagination-item--active">
+                                <button class="shops__pagination-button">
+                                    1
+                                </button>
+                            </li>
+
+                            <li class="shops__pagination-item">
+                                <button class="shops__pagination-button">
+                                    2
+                                </button>
+                            </li>
+
+                            <li class="shops__pagination-item">
+                                <button class="shops__pagination-button">
+                                    <img class="shops__pagination-button-next" src="img/chevron-right-blue.svg"
+                                        alt="Next Button" width="10" height="15">
+                                </button>
+                            </li>
+
+                            <li class="shops__pagination-item">
+                                <button class="shops__pagination-button">
+                                    <img class="shops__pagination-button-next" src="img/chevrons-right.svg"
+                                        alt="Next Button" width="10" height="15">
+                                </button>
+                            </li>
+
+                            <li class="shops__pagination-item shops__pagination-items">
+                                <button class="shops__pagination-number" disabled>
+                                    1 - 18 of 20 items
+                                </button>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="container footer__top-container">
+                <a class="footer__logo logo" href="/">
+                    <img class="logo__img" src="./img/logo.png" alt="ama logo" width="150" height="50">
+                </a>
+                <address class="footer__address">via Puccini, 28
+                    42018 San Martino in Rio
+                    Reggio Emilia
+                </address>
+                <ul class="footer__tel-list">
+                    <li class="footer__tel-item">
+                        <a href="tel:+998903727207" class="footer__tel-link">Tel. 0522-6369
+                        </a>
+                    </li>
+                    <li class="footer__tel-item">
+                        <a href="tel:+998903727207" class="footer__tel-link">Tel. 0522-6369
+                        </a>
+                    </li>
+                    <li class="footer__tel-item">
+                        <a href="tel:+998903727207" class="footer__tel-link">Tel. 0522-6369
+                        </a>
+                    </li>
+                    <li class="footer__tel-item">
+                        <a href="tel:+998903727207" class="footer__tel-link">Tel. 0522-6369
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer__socials-list">
+                    <li class="footer__socials-item ">
+                        <a class="footer__socials-link" target="_blank" href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="path"
+                                    d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"
+                                    fill="#fff"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__socials-item ">
+                        <a class="footer__socials-link" target="_blank" href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="path"
+                                    d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"
+                                    fill="#fff"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__socials-item ">
+                        <a class="footer__socials-link" target="_blank" href="#">
+                            <svg width="24" height="20" viewBox="0 0 24 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="path"
+                                    d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"
+                                    fill="#fff"></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p class="footer__bottom-copy">© 2018 AMA Accessori Macchine Agricole - P. IVA 00639260355 - Cap. Soc.
+                    16.000.000 euro iv - REA: n. 145889
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="./main.js"></script>
+
+</body>
+
+
+</html>
