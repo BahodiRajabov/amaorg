@@ -1,12 +1,12 @@
 .nav {
-  display: flex;
-  align-items: center;
+  margin-right: 10px;
 }
 .nav__list {
   @include reset-list;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .nav__item {
   margin-right: 10px;
@@ -25,5 +25,28 @@
   padding: 5px 10px;
   &:hover {
     opacity: 0.8;
+  }
+}
+@include responsive(900) {
+  .nav__link {
+    font-size: 18px;
+  }
+}
+@include responsive(630) {
+  .nav {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .nav__list {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+  .nav__item {
+    margin: 0;
+  }
+  .nav__link {
+    font-size: 20px;
+    width: 100%;
   }
 }

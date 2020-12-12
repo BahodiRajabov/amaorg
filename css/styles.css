@@ -406,7 +406,7 @@ img {
 }
 
 .header__logo {
-  margin-right: 80px;
+  margin-right: 10px;
 }
 
 .header__top {
@@ -476,6 +476,7 @@ img {
   border-radius: 5px;
   overflow: hidden;
   margin-right: 10px;
+  height: 36px;
 }
 
 .header__bottom-form-input {
@@ -505,8 +506,80 @@ img {
   background-color: transparent;
   cursor: pointer;
   border-left: 1px solid #ddd;
-  width: 34px;
+  width: 36px;
   outline: none;
+}
+
+.header__bottom-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__toggler {
+  display: none;
+}
+
+@media only screen and (max-width: 1150px) {
+  .header__top {
+    display: none;
+  }
+  .header__bottom-right {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .header--open .header__bottom-main {
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+  }
+  .header__bottom-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__bottom-form {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .header--open .header__toggler {
+    background-image: url("../../img/times-solid.svg");
+  }
+  .header__bottom-main {
+    display: none;
+  }
+  .header__toggler {
+    display: block;
+    border: none;
+    outline: none;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    background-image: url("../../img/bars-solid.svg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-transition: background-position 0.2s ease;
+    transition: background-position 0.2s ease;
+  }
 }
 
 .logo {
@@ -527,12 +600,7 @@ img {
 }
 
 .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-right: 10px;
 }
 
 .nav__list {
@@ -546,9 +614,11 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .nav__item {
@@ -572,24 +642,62 @@ img {
   opacity: 0.8;
 }
 
+@media only screen and (max-width: 900px) {
+  .nav__link {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .nav {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    text-align: center;
+  }
+  .nav__item {
+    margin: 0;
+  }
+  .nav__link {
+    font-size: 20px;
+    width: 100%;
+  }
+}
+
 .language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #eeeeee;
+  height: 36px;
+}
+
+.language__img {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.language__btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.language__img {
-  display: block;
-}
-
-.language__btn {
-  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 36px;
   height: 100%;
   padding: 0;
   border: none;

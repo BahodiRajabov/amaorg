@@ -38,44 +38,48 @@
     <!-- header bottom  -->
     <div class="header__bottom">
       <div class="container header__bottom-container">
-        <nav class="nav">
-          <a class="header__logo logo" href="/">
-            <img class="logo__img" src="./img/logo.png" alt="ama logo" width="150" height="50">
-          </a>
-          <ul class="nav__list">
-            <li class="nav__item nav__item--active ">
-              <a class="nav__link" href="#">Home</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="./aftermarket.html">aftermarket</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Apps</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Testimonials</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">About us</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__bottom-right">
-          <form class="header__bottom-form" action="#" method="get">
-            <input class="header__bottom-form-input" type="search" name="search" placeholder="search"
-              aria-label="search" required>
-            <button class="header__bottom-right-search" type="button" aria-label="Search">
-              <img class="header__bottom-right-search-img" src="./img/search.svg" alt="search icon" width="20"
-                height="20">
-            </button>
-          </form>
-          <div class="language">
-            <button class="language__btn language__btn--active" type="button">
-              <img class="language__img" src="./img/ru-flag.svg" alt="ru flag" width="20" height="20">
-            </button>
-            <button class="language__btn" type="button">
-              <img class="language__img" src="./img/en-flag.svg" alt="en flag" width="20" height="20">
-            </button>
+        <a class="header__logo logo" href="/">
+          <img class="logo__img" src="./img/logo.png" alt="ama logo" width="150" height="50">
+        </a>
+        <button class="header__toggler" type="button" aria-label="toggle menu button">
+        </button>
+        <div class="header__bottom-main">
+          <nav class="nav header__nav">
+            <ul class="nav__list">
+              <li class="nav__item nav__item--active ">
+                <a class="nav__link" href="#">Home</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="./aftermarket.html">aftermarket</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Apps</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Testimonials</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">About us</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__bottom-right">
+            <form class="header__bottom-form" action="#" method="get">
+              <input class="header__bottom-form-input" type="search" name="search" placeholder="search"
+                aria-label="search" required>
+              <button class="header__bottom-right-search" type="button" aria-label="Search">
+                <img class="header__bottom-right-search-img" src="./img/search.svg" alt="search icon" width="20"
+                  height="20">
+              </button>
+            </form>
+            <div class="language">
+              <button class="language__btn language__btn--active" type="button">
+                <img class="language__img" src="./img/ru-flag.svg" alt="ru flag" width="20" height="20">
+              </button>
+              <button class="language__btn" type="button">
+                <img class="language__img" src="./img/en-flag.svg" alt="en flag" width="20" height="20">
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -412,6 +416,13 @@
       </div>
     </div>
   </footer>
+  <script>
+    var header = document.querySelector('.header');
+    var btn = document.querySelector('.header__toggler');
+    btn.addEventListener('click', () => {
+      header.classList.toggle('header--open');
+    });
+  </script>
 </body>
 
 

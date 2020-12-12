@@ -1,15 +1,19 @@
 .language {
   display: flex;
-  align-items: center;
-  border: 1px solid #ddd;
   border-radius: 5px;
   overflow: hidden;
+  background-color: rgb(238, 238, 238);
+  height: 36px;
 }
 .language__img {
-  display: block;
+  display: inline-block;
+  vertical-align: baseline;
 }
 .language__btn {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
   height: 100%;
   padding: 0;
   border: none;
@@ -21,3 +25,13 @@
     background-color: #ddd;
   }
 }
+// @include responsive(850) {
+//   .language {
+//     display: none;
+//   }
+// }
+// @include responsive(630) {
+//   .language {
+//     display: block;
+//   }
+// }

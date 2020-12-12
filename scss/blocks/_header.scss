@@ -6,7 +6,7 @@
   left: 0;
 }
 .header__logo {
-  margin-right: 80px;
+  margin-right: 10px;
 }
 .header__top {
   background-color: #004b93;
@@ -55,6 +55,7 @@
   border-radius: 5px;
   overflow: hidden;
   margin-right: 10px;
+  height: 36px;
 }
 .header__bottom-form-input {
   outline: none;
@@ -73,8 +74,65 @@
   background-color: transparent;
   cursor: pointer;
   border-left: 1px solid #ddd;
-  width: 34px;
+  width: 36px;
   outline: none;
 }
 .header__bottom-right-search-img {
+}
+.header__bottom-main {
+  display: flex;
+  align-items: center;
+}
+.header__toggler {
+  display: none;
+}
+
+@include responsive(1150) {
+  .header__top {
+    display: none;
+  }
+  .header__bottom-right {
+    display: none;
+  }
+}
+@include responsive(630) {
+  .header--open .header__bottom-main {
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background-color: rgb(248, 248, 248);
+  }
+  .header__bottom-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__bottom-form {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .header--open .header__toggler {
+    background-image: url("../../img/times-solid.svg");
+  }
+  .header__bottom-main {
+    display: none;
+  }
+  .header__toggler {
+    display: block;
+    border: none;
+    outline: none;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    background-image: url("../../img/bars-solid.svg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: background-position 0.2s ease;
+  }
 }
