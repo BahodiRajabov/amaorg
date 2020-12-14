@@ -2070,6 +2070,8 @@ img {
 
 .shop__product-table-value {
   border: 1px solid #ddd;
+  font-size: 14px;
+  color: #000;
 }
 
 .login {
