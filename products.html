@@ -11,7 +11,279 @@
 </head>
 
 <body>
+  <!-- header section  -->
+  <header class="header">
+    <!-- header top  -->
+    <div class="header__top">
+      <div class="container">
+        <ul class="header__top-list">
+          <li class="header__top-item header__top-item--active ">
+            <a class="header__top-link" href="#">Home</a>
+          </li>
+          <li class="header__top-item">
+            <a class="header__top-link" href="#">Find a doctor</a>
+          </li>
+          <li class="header__top-item">
+            <a class="header__top-link" href="#">Apps</a>
+          </li>
+          <li class="header__top-item">
+            <a class="header__top-link" href="#">Testimonials</a>
+          </li>
+          <li class="header__top-item">
+            <a class="header__top-link" href="/login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- header bottom  -->
+    <div class="header__bottom">
+      <div class="container header__bottom-container">
+        <a class="header__logo logo" href="/">
+          <img class="logo__img" src="./img/logo.png" alt="ama logo" width="150" height="50">
+        </a>
+        <button class="header__toggler" type="button" aria-label="toggle menu button">
+        </button>
+        <div class="header__bottom-main">
+          <nav class="nav header__nav">
+            <ul class="nav__list">
+              <li class="nav__item nav__item--active ">
+                <a class="nav__link" href="#">Home</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Apps</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Testimonials</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="./aftermarket.html">aftermarket</a>
+                <ul class="nav__sub-list">
+                  <li class="nav__sub-item">
+                    <a href="./shops" class="nav__sub-link">AGRi</a>
+                  </li>
+                  <li class="nav__sub-item">
+                    <a href="#" class="nav__sub-link">Garden</a>
+                  </li>
+                  <li class="nav__sub-item">
+                    <a href="#" class="nav__sub-link">Grapicks</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">About us</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__bottom-right">
+            <form class="header__bottom-form" action="#" method="get">
+              <input class="header__bottom-form-input" type="search" name="search" placeholder="search"
+                aria-label="search" required>
+              <button class="header__bottom-right-search" type="button" aria-label="Search">
+                <img class="header__bottom-right-search-img" src="./img/search.svg" alt="search icon" width="20"
+                  height="20">
+              </button>
+            </form>
+            <div class="language">
+              <button class="language__btn language__btn--active" type="button">
+                <img class="language__img" src="./img/ru-flag.svg" alt="ru flag" width="20" height="20">
+              </button>
+              <button class="language__btn" type="button">
+                <img class="language__img" src="./img/en-flag.svg" alt="en flag" width="20" height="20">
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
+  <main class="main">
+    <section class="breadcrumb">
+      <div class="container breadcrumb__container">
+        <ul class="breadcrumb__list">
+          <li class="breadcrumb__item">
+            <a class="breadcrumb__link" href="index.html">Home</a>
+          </li>
+
+          <li class="breadcrumb__item">
+            <a class="breadcrumb__link" href="#">Catalogo</a>
+          </li>
+          <li class="breadcrumb__item">
+            <a class="breadcrumb__link" href="garden.html">Garden</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="shop">
+      <div class="shop__container container">
+        <div class="shop__bar">
+          <div class="shop__bar-top">
+            <h2 class="shop__bar-heading">SEARCH PRODUCTS</h2>
+            <div class="shop__bar-search-wrapper">
+              <form class="shop__search-form" action="/" method="GET">
+                <input class="shop__bar-search" type="search" name="search" placeholder="search term"
+                  aria-label="search product">
+                <button class="shop__bar-button" type="button">
+                  <img class="shop__bar-button-img" src="img/search-shops.svg" alt="search" width="22" height="16">
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="shop__bar-bottom">
+            <h3 class="shop__bar-title">Garden</h3>
+
+            <ul class="shop__bar-list">
+              <li class="shop__bar-item">
+                <a class="shop__bar-link" href="">Battery & electric tools</a>
+              </li>
+
+              <li class="shop__bar-item">
+                <a class="shop__bar-link" href="">Brushcutter</a>
+              </li>
+
+              <li class="shop__bar-item">
+                <a class="shop__bar-link" href="">Brushcutter spare parts</a>
+              </li>
+
+              <li class="shop__bar-item">
+                <a class="shop__bar-link" href="">Chainsaw</a>
+              </li>
+
+              <li class="shop__bar-item">
+                <a class="shop__bar-link" href="">Chainsaw spare parts</a>
+              </li>
+
+              <li class="shop__bar-item">
+                <a class="shop__bar-link" href="">Garden machinery</a>
+              </li>
+
+              <li class="shop__bar-item">
+                <a class="shop__bar-link" href="">Gardening equipment</a>
+              </li>
+
+              <li class="shop__bar-item">
+                <a class="shop__bar-link" href="">Hedgetrimmers</a>
+              </li>
+
+              <li class="shop__bar-item">
+                <a class="shop__bar-link" href="">Lawn tractors & mower spare parts</a>
+              </li>
+
+              <li class="shop__bar-item">
+                <a class="shop__bar-link" href="">Lawnmower</a>
+              </li>
+
+              <li class="shop__bar-item">
+                <a class="shop__bar-link" href="">Leaves vacuum, scarifier, shredder</a>
+              </li>
+
+              <li class="shop__bar-item">
+                <a class="shop__bar-link" href="">Motor hose & motor mowers</a>
+              </li>
+
+              <li class="shop__bar-item">
+                <a class="shop__bar-link" href="">Multifunction system</a>
+              </li>
+
+              <li class="shop__bar-item">
+                <a class="shop__bar-link" href="">Oils and fuel transfer</a>
+              </li>
+
+              <li class="shop__bar-item">
+                <a class="shop__bar-link" href="">Robot lawn mower kress</a>
+              </li>
+
+              <li class="shop__bar-item">
+                <a class="shop__bar-link" href="">Safety products</a>
+              </li>
+
+              <li class="shop__bar-item">
+                <a class="shop__bar-link" href="">Snowthrowers</a>
+              </li>
+
+              <li class="shop__bar-item">
+                <a class="shop__bar-link" href="">Tractor</a>
+              </li>
+
+              <li class="shop__bar-item">
+                <a class="shop__bar-link" href="">Transporters</a>
+              </li>
+
+              <li class="shop__bar-item">
+                <a class="shop__bar-link" href="">Vacuum & knapsack mist blowers</a>
+              </li>
+            </ul>
+          </div>
+        </div> <!-- shop__bar -->
+        <div class="shop__product">
+          <div class="shop__product-top">
+            <form class="shop__search-form shop__product-form" action="/" method="GET">
+              <input class="shop__bar-search shop__product-input" type="search" name="search"
+                placeholder="Search product" aria-label="search product">
+              <button class="shop__bar-button" type="button">
+                <img class="shop__bar-button-img" src="img/search-shops.svg" alt="search" width="22" height="16">
+              </button>
+            </form>
+          </div>
+          <!-- product -->
+          <div class="shop__product-bottom">
+            <div class="shop__images">
+              <img class="shop__images-img" src="img/products.jpg" alt="product img" width="54" height="54">
+              <img class="shop__images-img" src="img/products.jpg" alt="product img" width="54" height="54">
+            </div>
+            <div class="shop__product-card">
+              <img class="shop__productc-card-img" src="img/products.jpg" alt="product img" width="310" height="310">
+              <div class="shop__product-info">
+                <h3 class="shop__product-info-title">sedile komodo-act</h3>
+                <p class="shop__product-info-code">Cod. Prodotto - <span class="shop__product-info-id">88106</span></p>
+                <p class="shop__product-info-desc">Seat Komodo ACT with mechanic suspension and adjustable armrests,
+                  headrest, automatic safety belt and microswitch OPS black fabric. Document bag. Ergonomic and
+                  comfortable cushions</p>
+                <p class="shop__product-info-details">PRODUCT DETAILS:</p>
+                <table class="shop__product-table">
+                  <tbody>
+                    <tr class="shop__product-table-row">
+                      <td class="shop__product-table-desc">
+                        Color
+                      </td>
+                      <td class="shop__product-table-value">black</td>
+                    </tr>
+                    <tr class="shop__product-table-row">
+                      <td class="shop__product-table-desc">
+                        Homologation
+                      </td>
+                      <td class="shop__product-table-value">CEE 78/764 classe A II-III ISO 7096 EM3,
+                        EM5, EM6, EM9 EN 13490 IT4 ISO3776-2</td>
+                    </tr>
+                    <tr class="shop__product-table-row">
+                      <td class="shop__product-table-desc">
+                        Backrest
+                      </td>
+                      <td class="shop__product-table-value">-23° / + 66°</td>
+                    </tr>
+                    <tr class="shop__product-table-row">
+                      <td class="shop__product-table-desc">
+                        Alf adjustment reg. mm
+                      </td>
+                      <td class="shop__product-table-value">150 mm</td>
+                    </tr>
+                    <tr class="shop__product-table-row">
+                      <td class="shop__product-table-desc">
+                        Weight adj.
+                      </td>
+                      <td class="shop__product-table-value">50 - 130 Kg</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./main.js"></script>
 </body>
 
 </html>
