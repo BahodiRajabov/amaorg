@@ -4,10 +4,11 @@
 
 .shops__container{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .shops__bar{
-    max-width: 290px;
+    max-width: 281px;
     padding: 40px 25px;
     background-color: #F9F9F9;
 }
@@ -27,12 +28,14 @@
 
 .shops__search-form{
     display: flex;
+    width: 100%;
 }
 
 .shops__bar-search{
     padding: 10px 4px;
     border: 1px solid #ccc;
     background-color: #fff;
+    width: 100%;
 }
 
 .shops__bar-button{
@@ -71,7 +74,7 @@
     text-decoration: none;
     font-size: 13px;
     color: #004e80;
-
+    
     &::before{
         content: "";
         width: 20px;
@@ -80,7 +83,7 @@
         background-repeat: no-repeat;
         background-position: center center;
     }
-
+    
     &:hover{
         text-decoration: underline;
     }
@@ -89,7 +92,7 @@
 /* Shops Products */
 .shops__products{
     padding: 10px 15px;
-    width: 100%;
+    max-width: 959px;
 }
 
 .shops__products-top{
@@ -114,6 +117,7 @@
 .shops__type-form{
     display: flex;
     margin-right: 10px;
+    width: 100%;
 }
 
 .shops__type-button{
@@ -122,10 +126,16 @@
     border: 1px solid #ccc;
 }
 
+.shops__type-button-img{
+    min-width: 20px;
+    min-height: 20px;
+}
+
 .shops__type-input{
     padding: 4px 8px;
     background-color: #fff;
     border: 1px solid #ccc;
+    width: 100%;
 }
 
 .shops__type-sort{
@@ -172,6 +182,11 @@
     border: 1px solid #ccc;
 }
 
+.shops__pagination-button-next{
+    min-width: 10px;
+    min-height: 15px;
+}
+
 .shops__pagination-item--active .shops__pagination-button{
     border: 1px solid #004e80;
 }
@@ -216,7 +231,7 @@
     text-decoration: none;
     font-size: 11px;
     font-family: "Arial", "Helvetica", sans-serif;
-
+    
     &:hover{
         text-decoration: underline;
     }
@@ -254,4 +269,45 @@
 
 .shops__pagination-items{
     margin-left: auto;
+}
+
+
+@media only screen and (max-width: 1280px){
+    .shops__products{
+        order: -1;
+        max-width: 100%;
+    }
+    
+    .shops__list{
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .shops__type{
+        display: none;
+    }
+
+    .shops__bar{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .shops__item{
+        max-width: 44%;
+        width: 44%;
+    }
+}
+
+@media only screen and (max-width: 426px){
+    .shops__pagination-items{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 324px){
+    .shops__item{
+        max-width: 100%;
+        width: 100%;
+    }
 }
