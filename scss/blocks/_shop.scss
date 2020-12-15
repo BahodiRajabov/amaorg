@@ -1,5 +1,6 @@
 .shop {
   background-color: #fcfcfc;
+  padding-bottom: 50px;
 }
 .shop__container {
   display: flex;
@@ -7,6 +8,7 @@
 }
 .shop__bar {
   max-width: 281px;
+  width: 100%;
   padding: 40px 25px;
   background-color: #f9f9f9;
 }
@@ -119,6 +121,7 @@
   vertical-align: baseline;
   border: 1px solid #004b93;
   margin-right: 20px;
+  margin-bottom: 10px;
 }
 .shop__product-card {
   display: flex;
@@ -172,4 +175,40 @@
   border: 1px solid #ddd;
   font-size: 14px;
   color: #000;
+}
+@include responsive(1300) {
+  .shop__container {
+    flex-direction: column-reverse;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .shop__bar,
+  .shop__product {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  .shop__product {
+    padding: 0;
+  }
+}
+@include responsive(850) {
+  .shop__product {
+    flex-direction: column;
+  }
+  .shop__product-bottom {
+    flex-wrap: wrap;
+  }
+  .shop__images {
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+  .shop__productc-card-img {
+    max-width: 100%;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .shop__product-card {
+    flex-wrap: wrap;
+  }
 }

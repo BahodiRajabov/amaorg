@@ -1852,6 +1852,7 @@ img {
 
 .shop {
   background-color: #fcfcfc;
+  padding-bottom: 50px;
 }
 
 .shop__container {
@@ -1864,6 +1865,7 @@ img {
 
 .shop__bar {
   max-width: 281px;
+  width: 100%;
   padding: 40px 25px;
   background-color: #f9f9f9;
 }
@@ -2006,6 +2008,7 @@ img {
   vertical-align: baseline;
   border: 1px solid #004b93;
   margin-right: 20px;
+  margin-bottom: 10px;
 }
 
 .shop__product-card {
@@ -2072,6 +2075,56 @@ img {
   border: 1px solid #ddd;
   font-size: 14px;
   color: #000;
+}
+
+@media only screen and (max-width: 1300px) {
+  .shop__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .shop__bar,
+  .shop__product {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  .shop__product {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .shop__product {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .shop__product-bottom {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .shop__images {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 10px;
+  }
+  .shop__productc-card-img {
+    max-width: 100%;
+    height: 300px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .shop__product-card {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .event-articles {
