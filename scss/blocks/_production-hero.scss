@@ -40,7 +40,7 @@
 .production__branches {
   padding-top: 80px;
   padding-bottom: 80px;
-  background-color: #f4f4f4;
+  background-color: rgb(251, 251, 251);
 }
 .production__branches-info {
   margin-bottom: 40px;
@@ -162,7 +162,9 @@
 }
 
 @include responsive(900) {
-  .production__hero-heading {
+  .production__hero-heading,
+  .production__offices-title,
+  .production__branches-title {
     font-size: 28px;
     line-height: 28px;
   }

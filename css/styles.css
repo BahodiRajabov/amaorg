@@ -2233,7 +2233,7 @@ img {
 .production__branches {
   padding-top: 80px;
   padding-bottom: 80px;
-  background-color: #f4f4f4;
+  background-color: #fbfbfb;
 }
 
 .production__branches-info {
@@ -2389,7 +2389,9 @@ img {
 }
 
 @media only screen and (max-width: 900px) {
-  .production__hero-heading {
+  .production__hero-heading,
+  .production__offices-title,
+  .production__branches-title {
     font-size: 28px;
     line-height: 28px;
   }
