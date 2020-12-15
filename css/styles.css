@@ -2496,6 +2496,8 @@ img {
 }
 
 .solutions-cabins__item {
+  max-width: 300px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
