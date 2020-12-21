@@ -24,10 +24,14 @@
             <a class="header__top-link" href="#">Apps</a>
           </li>
           <li class="header__top-item">
-            <a class="header__top-link" href="#">Testimonials</a>
-          </li>
-          <li class="header__top-item">
             <a class="header__top-link" href="/login.html">Login</a>
+          </li>
+          <li class="header__top-item header__top-item--cart">
+            <a class="header__top-link " href="#">
+              <img class="header__top-cart-img" src="./img/shopping-cart-solid.svg" alt="Shooping cart img" width="24"
+                height="24">
+              <span class="header__top-cart-badge">1</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -43,9 +47,6 @@
         <div class="header__bottom-main">
           <nav class="nav header__nav">
             <ul class="nav__list">
-              <li class="nav__item nav__item--active ">
-                <a class="nav__link" href="#">Home</a>
-              </li>
               <li class="nav__item">
                 <a class="nav__link" href="./download.html">Download</a>
               </li>
@@ -202,6 +203,7 @@
                     </tr>
                   </tbody>
                 </table>
+                <button class="shop__product-addcard" type="button">Add to card</button>
               </div>
             </div>
           </div>
@@ -277,6 +279,34 @@
       </div>
     </div>
   </footer>
+  <section class="modal">
+    <form class="modal__form" action="#" method="POST">
+      <h1 class="modal__title">modal Page</h1>
+      <label class="modal__form-label" for="count-input">How many will you buy?</label>
+      <input class="modal__form-input" type="number" name="count" placeholder="count of product" id="count-input"
+        required>
+      <div class="modal__form-details">
+        <!-- <label for="#" class="modal__form-details-label">Lorem ipsum dolor sit.</label> -->
+        <select name="select" class="modal__form-input modal__form-select">
+          <option value="20w">20 watt</option>
+          <option value="30w">30 watt</option>
+          <option value="40w">40 watt</option>
+          <option value="50w">50 watt</option>
+        </select>
+        <div class="modal__form-checkboxs">
+          <label class="modal__form-checkbox-label" for="checkbox-1">
+            <span class="modal__form-checkbox-text">Delevery</span>
+            <input class="modal__form-checkbox" type="checkbox" name="delevery" id="checkbox-1">
+          </label>
+          <label class="modal__form-checkbox-label" for="checkbox-2">
+            <span class="modal__form-checkbox-text">Agreement</span>
+            <input class="modal__form-checkbox" type="checkbox" name="checkbox" id="checkbox-2">
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="modal__form-button">Buyurtma berish</button>
+    </form>
+  </section>
   <script src="./main.js"></script>
 </body>
 

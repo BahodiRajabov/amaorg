@@ -25,6 +25,27 @@
     margin-right: 0;
   }
 }
+.header__top-item--cart {
+  position: relative;
+}
+.header__top-cart-img {
+  display: block;
+}
+.header__top-cart-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  font-size: 12px;
+  background-color: #222;
+  color: #fff;
+  position: absolute;
+  top: -8px;
+  right: -5px;
+}
+
 .header__top-item--active {
 }
 .header__top-link {

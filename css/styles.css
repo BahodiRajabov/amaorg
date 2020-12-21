@@ -438,6 +438,35 @@ img {
   margin-right: 0;
 }
 
+.header__top-item--cart {
+  position: relative;
+}
+
+.header__top-cart-img {
+  display: block;
+}
+
+.header__top-cart-badge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  font-size: 12px;
+  background-color: #222;
+  color: #fff;
+  position: absolute;
+  top: -8px;
+  right: -5px;
+}
+
 .header__top-link {
   display: block;
   text-decoration: none;
@@ -2058,6 +2087,7 @@ img {
   border-collapse: collapse;
   -webkit-box-shadow: inset 0px 4px 3px -2px rgba(0, 0, 0, 0.06);
           box-shadow: inset 0px 4px 3px -2px rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
 }
 
 .shop__product-table-row:nth-child(2n) {
@@ -2075,6 +2105,15 @@ img {
   border: 1px solid #ddd;
   font-size: 14px;
   color: #000;
+}
+
+.shop__product-addcard {
+  border: 1px solid #004b93;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: #004b93;
+  color: #fff;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -2566,6 +2605,142 @@ img {
   .solutions-cabins__item {
     width: 100%;
   }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal--open {
+  display: block;
+}
+
+.modal__form {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0px 0px 10px 0px #6e6e6e;
+          box-shadow: 0px 0px 10px 0px #6e6e6e;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.modal__title {
+  margin-top: 0;
+  text-align: center;
+  text-transform: capitalize;
+  color: #222;
+}
+
+.modal__form-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal__form-label::before {
+  content: "*";
+  color: tomato;
+  font-size: 22px;
+  font-weight: 500;
+  margin-right: 3px;
+}
+
+.modal__form-input {
+  padding: 10px;
+  border: 1px solid #505050;
+  border-radius: 5px;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
+.modal__form-input:last-child {
+  margin-bottom: 0;
+}
+
+.modal__form-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.modal__form-select {
+  margin-right: 30px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.modal__form-checkboxs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal__form-checkbox {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 20px;
+  height: 20px;
+}
+
+.modal__form-checkbox-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+}
+
+.modal__form-checkbox-label:last-child {
+  margin-right: 0;
+}
+
+.modal__form-checkbox-text {
+  margin-right: 5px;
+}
+
+.modal__form-button {
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: #265cad;
+  color: #fff;
+  border-radius: 5px;
 }
 
 .login {
