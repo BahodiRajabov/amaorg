@@ -4,8 +4,9 @@ var elModal = document.querySelector(".modal");
 var elModalForm = document.querySelector(".modal__form");
 var elCartBtn = document.querySelector(".shop__product-addcard");
 var elCartBadge = document.querySelector(".header__top-cart-badge");
+var elCart = document.querySelector(".header__top-item--cart");
 const cartUserLocalStorage = JSON.parse(localStorage.getItem("cartProducts"));
-let cartUserArray = cartUserLocalStorage ? cartUserLocalStorage : [];
+let cartUserArray = cartUserLocalStorage || [];
 let updateCartBadge = () => {
   if (cartUserLocalStorage)
     elCartBadge.textContent = cartUserLocalStorage.length;
@@ -14,6 +15,8 @@ let updateCartBadge = () => {
 updateCartBadge();
 
 // header toggler button
+
+// elCart.addEventListener("click");
 
 btn.addEventListener("click", () => {
   header.classList.toggle("header--open");
@@ -46,7 +49,7 @@ if (elModal) {
     cartUserArray.push(newProduct);
     localStorage.setItem("cartProducts", JSON.stringify(cartUserArray));
     elModal.classList.remove("modal--open");
-    updateCartBadge();
     alert("Added to cart");
+    updateCartBadge();
   });
 }
