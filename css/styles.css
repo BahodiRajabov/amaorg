@@ -2607,6 +2607,82 @@ img {
   }
 }
 
+.download {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.download__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.download__item {
+  margin: 10px;
+  max-width: 600px;
+  min-height: 216px;
+  width: 100%;
+  padding: 30px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.download__item--download1 {
+  background-image: url("/img/download4.jpg");
+  color: #004b93;
+}
+
+.download__item--download1 .download__link {
+  border-color: #004b93;
+}
+
+.download__item--downlaod2 {
+  background-image: url("/img/download3.jpg");
+  color: #fff;
+}
+
+.download__item--downlaod3 {
+  background-image: url("/img/download1.jpg");
+  color: #fff;
+}
+
+.download__item--downlaod4 {
+  background-image: url("/img/download2.jpg");
+  color: #004b93;
+}
+
+.download__item--downlaod4 .download__link {
+  border-color: #004b93;
+}
+
+.download__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 700;
+  letter-spacing: 0px;
+}
+
+.download__link {
+  display: inline-block;
+  vertical-align: baseline;
+  border: 2px solid white;
+  color: inherit;
+  background-color: transparent;
+  text-decoration: none;
+  padding: 12px 18px;
+}
+
 .modal {
   display: none;
   position: fixed;

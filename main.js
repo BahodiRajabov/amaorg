@@ -6,8 +6,8 @@
 //   return node.querySelectorAll(selector);
 // };
 
-// var header = document.querySelector(".header");
-// var btn = document.querySelector(".header__toggler");
+var elHeader = document.querySelector(".header");
+var btn = document.querySelector(".header__toggler");
 // var elModal = document.querySelector(".modal");
 // var elModalForm = document.querySelector(".modal__form");
 // var elCartBtn = document.querySelector(".shop__product-addcard");
@@ -29,27 +29,26 @@
 //   cartUserProductArray.forEach((product, index) => {
 //     console.log(product);
 //     var templateClone = elCartProductTemplate.cloneNode(true);
-//     console.log(templateClone );
+//     console.log(templateClone);
 //     $_("modal-cart__item-img", templateClone).src = product.img;
 //     $_("modal-cart__item-title", templateClone).textContent = product.productName;
 //     $_("modal-cart__item-count", templateClone).textContent = product.countOfProduct;
 //     $_("modal-cart__item-type", templateClone).textContent = product.typeOfProduct;
-//     $_("modal-cart__item-delevery",templateClone).textContent = product.deleveryOfProduct;
+//     $_("modal-cart__item-delevery", templateClone).textContent = product.deleveryOfProduct;
 //     $_("modal-cart__item-agree", templateClone).textContent = product.agreeOfProduct;
 //     productsFragment.appendChild(templateClone)
-// });
+//   });
 // }
 
 // // header toggler button
-// elCart.addEventListener("click", (e) => {});
+// elCart.addEventListener("click", (e) => { });
 
-// btn.addEventListener("click", () => {
-//   header.classList.toggle("header--open");
-// });
+btn.addEventListener("click", () => {
+  header.classList.toggle("header--open");
+});
 
-// // set megin top on tablet and mobile mode
-// document.body.style.marginTop =
-//   document.querySelector(".header").offsetHeight + "px";
+// set megin top on tablet and mobile mode
+document.body.style.marginTop = elHeader.offsetHeight + "px";
 
 // if (elModal) {
 //   // listen when add cart button is clicked
