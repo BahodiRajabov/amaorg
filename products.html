@@ -307,6 +307,35 @@
       <button type="submit" class="modal__form-button">Buyurtma berish</button>
     </form>
   </section>
+  <section class="modal modal-cart">
+    <div class="modal__inner">
+      <h2 class="modal-cart__title">Your Products</h2>
+      <ul class="modal-cart__list">
+
+      </ul>
+      <button class="modal-cart__order" type="button">Order</button>
+      <template class="modal-cart__item-template">
+        <li class="modal-cart__item">
+          <img class="modal-cart__item-img" src="./img/products.jpg" alt="Rasm kreslo" width="80" height="80">
+          <div class="modal-cart__item-info">
+            <div class="modal-cart__item-top">
+              <h3 class="modal-cart__item-title">sedile komodo-act</h3>
+              <button class="modal-cart__item-delete" type="button">Delete</button>
+            </div>
+            <div class="modal-cart__item-details">
+              <p class="modal-cart__item-count-text">Count of Product: <span class="modal-cart__item-count">3</span></p>
+              <p class="modal-cart__item-type-text">Type of Product: <span class="modal-cart__item-type">3</span></p>
+              <p class="modal-cart__item-delevery-text">Should delevery: <span
+                  class="modal-cart__item-delevery">3</span>
+              </p>
+              <p class="modal-cart__item-agree-text">Agreement of licence: <span class="modal-cart__item-agree">3</span>
+              </p>
+            </div>
+          </div>
+        </li>
+      </template>
+    </div>
+  </section>
   <script src="./main.js"></script>
 </body>
 
